@@ -1,3 +1,21 @@
-main{
-    grid-template-rows: 400px 60px 240px 60px 100px 60px 60px 60px 60px 100px 60px 60px 60px 60xp 100px 60px 60px 60px 60px 40px 40px 40px auto 100px;
+.container_index{
+    display: grid;
+    grid-template-rows: 400px 60px 240px 60px 100px 60px 60px 60px 60px 100px 60px 60px 60px 60px 100px 60px 60px 60px auto auto 100px;
+    grid-template-columns: 180px 180px;
+}
+.img1{
+    grid-column: span 2;
+    background-image: url("../img/tillfallig.png");
+}
+.about{
+    grid-column: span 2;
+    display: grid;
+    grid-template-rows: 60px auto;
+    grid-template-columns: 180px 180px; 
+}
+.contact{
+    grid-column: span 2;
+    display: grid;
+    grid-template-rows: 60px 40px 40px 40px auto 40px;
+    grid-template-columns: 1;
 }

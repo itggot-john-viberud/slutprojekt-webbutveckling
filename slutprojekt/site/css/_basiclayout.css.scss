@@ -5,7 +5,7 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 360px;
     grid-template-rows: 60px auto;
     height: auto;
     width: 360px;
@@ -18,3 +18,4 @@ header{
     grid-column: 1 span;
     text-align: center;
 }
+
