@@ -1,13 +1,17 @@
+button {
+  height: 60px;
+  width: 180px; }
+
 body {
   background-color: hotpink;
   font-family: Arial, Helvetica, sans-serif; }
 
 .container {
   display: grid;
-  grid-template-columns: 360px;
-  grid-template-rows: 60px auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: 60px auto 120px;
   height: auto;
-  width: 360px;
+  width: 1fr;
   margin-left: auto;
   margin-right: auto; }
 
@@ -16,27 +20,111 @@ header {
   grid-column: 1 span;
   text-align: center; }
 
+.end_img {
+  grid-row: 3 span;
+  background-image: url(""); }
+
+.end {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 3fr);
+  border: solid 5px; }
+
+@media only screen and (min-device-width: 1020px) {
+  .container {
+    grid-template-rows: 200px auto 200px;
+    grid-template-columns: 1fr;
+    width: 1280px; }
+
+  .end_img {
+    grid-row: 3 span;
+    background-image: url(""); }
+
+  .end {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 3fr);
+    border: solid 5px; } }
 .container_index {
   display: grid;
-  grid-template-rows: 400px 60px 240px 60px 100px 60px 60px 60px 60px 100px 60px 60px 60px 60px 100px 60px 60px 60px auto auto 100px;
-  grid-template-columns: 180px 180px; }
+  grid-template-rows: 400px 300px 520px 520px 520px auto auto;
+  grid-template-columns: repeat(2, 1fr); }
 
 .img1 {
   grid-column: span 2;
-  background-image: url("../img/tillfallig.png"); }
+  background-image: url("../img/tillfallig.png");
+  border: solid 5px;
+  border-bottom: 2.5px;
+  background-size: cover; }
+
+.you_will_get {
+  grid-column: span 2;
+  display: grid;
+  grid-template-rows: 60px 240;
+  grid-template-columns: 1fr;
+  border: solid 5px;
+  border-bottom: 2.5px; }
 
 .about {
   grid-column: span 2;
   display: grid;
   grid-template-rows: 60px auto;
-  grid-template-columns: 180px 180px; }
+  grid-template-columns: repeat(2, 1fr);
+  border: solid 5px;
+  border-bottom: 2.5px; }
 
 .contact {
   grid-column: span 2;
   display: grid;
-  grid-template-rows: 60px 40px 40px 40px auto 40px;
-  grid-template-columns: 1; }
+  grid-template-rows: 60px 40px 40px 40px auto 60px;
+  grid-template-columns: 1;
+  border: solid 5px;
+  border-bottom: 2.5px; }
 
+.front_img {
+  border: solid 5px;
+  border-bottom: 2.5px;
+  grid-column: span 2;
+  display: grid;
+  grid-template-rows: 60px 100px 120px 120px 120px;
+  grid-template-columns: 2; }
+
+.info_desktop {
+  display: none; }
+
+@media only screen and (min-device-width: 1020px) {
+  .container_index {
+    grid-template-rows: 700px 1100px 700px;
+    background-color: red; }
+
+  .img1 {
+    background-image: none;
+    border: none;
+    background-color: hotpink; }
+
+  .you_will_get {
+    border: none;
+    display: grid;
+    grid-template-rows: 100px 100px 900px;
+    grid-template-columns: 1fr; }
+
+  .info_desktop {
+    display: grid;
+    grid-template-rows: 300px 100px 400px 100px;
+    grid-template-columns: repeat(12, 1fr); }
+
+  h1 > .info_desktop {
+    grid-column: span 4;
+    text-align: center; }
+
+  .about {
+    border: none; }
+
+  .contact {
+    border: none; }
+
+  .front_img {
+    border: none; } }
 h1 {
   grid-column: span 2;
   text-align: center;
@@ -52,5 +140,5 @@ h3 {
   text-align: center;
   line-height: 60px;
   width: 180px;
-  height: 60px;
+  height: 120px;
   font-size: 2em; }
