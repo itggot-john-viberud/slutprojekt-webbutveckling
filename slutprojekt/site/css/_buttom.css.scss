@@ -2,3 +2,19 @@ button{
     height: 60px;
     width: 180px;
 }
+.header_button{
+    grid-column: span 1;
+    height: 50px;
+    width: 432px;
+    border-radius: 9001px;
+    color: hotpink;
+    border: solid hotpink 5px;
+    font-size: 2em;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+.header_button:hover{
+    background-color: hotpink; /* Green */
+    color: white;
+    
+}

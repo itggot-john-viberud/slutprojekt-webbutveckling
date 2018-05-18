@@ -18,11 +18,20 @@ header{
     grid-column: 1 span;
     text-align: center;
 }
+.header_img{
+    background-image: none;
+}
+.menu_desktop{
+    display: none;
+}
+
 .end_img{
+    background-color: hotpink;
     grid-row: 3 span;
     background-image: url("");
 }
 .end{
+    background-color: hotpink;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 3fr);
@@ -30,15 +39,34 @@ header{
 
 }
 @media only screen and (min-device-width: 1020px)  {
-    .container {
-        grid-template-rows: 200px auto 200px;
-        grid-template-columns: 1fr;
-        width: 1280px
+    header{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 200px 50px;
 
     }
+    .header_img{
+        background-image: url("../img/header_desktop.png");
+        grid-column: span 3;
+    }
+    .menu_desktop{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    body{
+        background-color: none;
+        background-image: url("../img/background.png");
+        background-size: cover;
+    }
+    .container {
+        grid-template-rows: 250px auto 200px;
+        grid-template-columns: 1fr;
+        width: 1296px;
+    }
+
     .end_img{
         grid-row: 3 span;
-        background-image: url("");
+        background-image: url("../img/end_img.png");
     }
     .end{
         display: grid;
