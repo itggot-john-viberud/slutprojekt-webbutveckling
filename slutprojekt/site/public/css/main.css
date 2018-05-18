@@ -18,6 +18,53 @@ button {
   /* Green */
   color: white; }
 
+.mobil_button {
+  grid-column: span 1;
+  height: 60px;
+  width: 120px;
+  border-radius: 50px;
+  color: white;
+  border: solid white 5px;
+  background-color: hotpink;
+  font-size: 1.5em; }
+
+.menu_mobil_close {
+  border: solid white 4px;
+  background-color: hotpink;
+  color: white;
+  border-radius: 20px;
+  position: fixed;
+  right: 5%;
+  z-index: 10;
+  padding: 16px;
+  font-size: 20px;
+  display: none; }
+
+.menu_mobil {
+  height: 220px;
+  width: 120px;
+  display: grid;
+  grid-template-rows: 60px 60px 60px 60px;
+  grid-template-columns: 120px;
+  position: fixed;
+  top: 68px;
+  right: -100%;
+  transition: 0.5s; }
+
+.menu_mobil.show {
+  right: 5%; }
+
+.menu_mobil_fixed.show {
+  border: solid white 4px;
+  background-color: hotpink;
+  color: white;
+  border-radius: 20px;
+  position: fixed;
+  right: 5%;
+  padding: 16px;
+  font-size: 20px;
+  cursor: pointer; }
+
 body {
   background-color: hotpink;
   font-family: Arial, Helvetica, sans-serif; }
@@ -43,7 +90,7 @@ header {
   display: none; }
 
 .end_img {
-  background-color: hotpink;
+  background-color: #1b0b13;
   grid-row: 3 span;
   background-image: url(""); }
 
@@ -54,39 +101,6 @@ header {
   grid-template-rows: repeat(3, 3fr);
   border: solid 5px; }
 
-@media only screen and (min-device-width: 1020px) {
-  header {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 200px 50px; }
-
-  .header_img {
-    background-image: url("../img/header_desktop.png");
-    grid-column: span 3; }
-
-  .menu_desktop {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); }
-
-  body {
-    background-color: none;
-    background-image: url("../img/background.png");
-    background-size: cover; }
-
-  .container {
-    grid-template-rows: 250px auto 200px;
-    grid-template-columns: 1fr;
-    width: 1296px; }
-
-  .end_img {
-    grid-row: 3 span;
-    background-image: url("../img/end_img.png"); }
-
-  .end {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 3fr);
-    border: solid 5px; } }
 .container_index {
   display: grid;
   grid-template-rows: 400px 300px 520px 520px 520px auto auto;
@@ -95,7 +109,7 @@ header {
 .img1 {
   grid-column: span 2;
   background-image: url("../img/tillfallig.png");
-  border: solid 5px;
+  border: solid 5px white;
   border-bottom: 2.5px;
   background-size: cover; }
 
@@ -104,7 +118,7 @@ header {
   display: grid;
   grid-template-rows: 60px 240;
   grid-template-columns: 1fr;
-  border: solid 5px;
+  border: solid 5px white;
   border-bottom: 2.5px; }
 
 .about {
@@ -112,7 +126,7 @@ header {
   display: grid;
   grid-template-rows: 60px auto;
   grid-template-columns: repeat(2, 1fr);
-  border: solid 5px;
+  border: solid 5px white;
   border-bottom: 2.5px; }
 
 .contact {
@@ -120,16 +134,16 @@ header {
   display: grid;
   grid-template-rows: 60px 40px 40px 40px auto 60px;
   grid-template-columns: 1;
-  border: solid 5px;
+  border: solid 5px white;
   border-bottom: 2.5px; }
 
 .front_img {
-  border: solid 5px;
+  border: solid 5px white;
   border-bottom: 2.5px;
   grid-column: span 2;
   display: grid;
   grid-template-rows: 60px 100px 120px 120px 120px;
-  grid-template-columns: 2; }
+  grid-template-columns: repeat(2, 1fr); }
 
 .info_desktop {
   display: none; }
@@ -173,14 +187,14 @@ header {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    border: solid 5px; }
+    border: solid 5px white; }
 
   .table {
     background-color: hotpink;
     grid-column: span 1;
     text-align: center;
     font-size: 3em;
-    border: solid 2px; }
+    border: solid 2px white; }
 
   .about {
     background-color: hotpink;
@@ -283,3 +297,46 @@ h5 {
   grid-template-columns: repeat(2, 1fr);
   border: solid 5px;
   border-bottom: 2.5px; }
+
+@media only screen and (min-device-width: 1020px) {
+  header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 200px 50px; }
+
+  .header_img {
+    background-image: url("../img/header_desktop.png");
+    grid-column: span 3; }
+
+  .menu_mobil {
+    display: none; }
+
+  .menu_mobil_close {
+    display: none; }
+
+  .menu_mobil_fixed {
+    display: none !important; }
+
+  .menu_desktop {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); }
+
+  body {
+    background-color: none;
+    background-image: url("../img/background.png");
+    background-size: cover; }
+
+  .container {
+    grid-template-rows: 250px auto 200px;
+    grid-template-columns: 1fr;
+    width: 1296px; }
+
+  .end_img {
+    grid-row: 3 span;
+    background-image: url("../img/end_img.png"); }
+
+  .end {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 3fr);
+    border: solid 5px; } }
