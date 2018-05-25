@@ -25,3 +25,43 @@ h5{
     text-align: center;
     font-size: 1em;
 }
+h6{
+    padding: 0;
+    margin: 0;
+    width:360px;
+    height:100px;
+    line-height:100px;
+    text-align: center;
+    grid-column: 1/4;
+    font-size: 2em;
+}
+h7{
+    padding: 0;
+    margin: 0;
+    width:1296px;
+    height:100px;
+    line-height:100px;
+    text-align: center;
+    grid-column: 1/4;
+    font-size: 2em;
+}
+h8{
+    padding: 0;
+    margin: 0;
+    width:432px;
+    height:100px;
+    line-height:100px;
+    text-align: center;
+    font-size: 2em;
+}
+h9{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 10em;
+    text-shadow: 5px 5px hotpink;
+}
+a{
+    text-decoration: none;
+}
+

@@ -1,6 +1,7 @@
 body {
     background-color: hotpink;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
 }
 
 .container {
@@ -18,23 +19,19 @@ header{
     grid-column: 1 span;
     text-align: center;
 }
-.header_img{
-    background-image: none;
-}
+
 .menu_desktop{
     display: none;
 }
 
-.end_img{
-    background-color: rgb(27, 11, 19);
-    grid-row: 3 span;
-    background-image: url("");
-}
 .end{
     background-color: hotpink;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 3fr);
-    border: solid 5px;
+    grid-template-rows: repeat(3, 40px);
+    border: solid 5px white;
 
+}
+.thanks{
+    font-size: 2em;
 }

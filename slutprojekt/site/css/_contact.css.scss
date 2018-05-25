@@ -2,4 +2,8 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 100px 250px 60px 60px 60px 200px;
+    border: solid white 5px;
+}
+.desktop_container_contact{
+    display: none;
 }

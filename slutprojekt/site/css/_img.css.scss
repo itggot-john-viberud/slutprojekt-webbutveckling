@@ -1,37 +1,46 @@
 .pic1{
-    background-image: url("../img/standard_baby.png");
-    background-size: cover;
+    background: url('../img/css_sprites.png') -10px -338px;
+
 }
 .pic2{
-    background-image: url("../img/standard_teenage.png");
-    background-size: cover;
+    background: url('../img/css_sprites.png') -246px -174px;
 }
 .pic3{
-    background-image: url("../img/standard_adult.png");
-    background-size: cover;
+    background: url('../img/css_sprites.png') -482px -10px;
 }
 
 .pic4{
-    background-image: url("../img/premium_baby.png");
-    background-size: cover;
+    background: url('../img/css_sprites.png') -482px -174px;
 }
 .pic5{
-    background-image: url("../img/premium_teenage.png");
-    background-size: cover;
+    background: url('../img/css_sprites.png') -10px -10px;
 }
 .pic6{
-    background-image: url("../img/premium_adult.png");
-    background-size: cover;
+    background: url('../img/css_sprites.png') -482px -338px;
+
 }
 .pic7{
-    background-image: url("../img/limited_edtion.png");
-    background-size: cover;
+    background: url('../img/css_sprites.png') -246px -10px;
+
 }
 .pic8{
-    background-image: url("../img/limited_teenage.png");
-    background-size: cover;
+    background: url('../img/css_sprites.png') -246px -338px;
 }
 .pic9{
-    background-image: url("../img/limited_adult.png");
-    background-size: cover;
+    background: url('../img/css_sprites.png') -10px -174px;
+}
+.header_img{
+    width: 360px; height: 60px;
+    background: url('../img/css_sprites.png') -10px -502px;
+}
+.end_img{
+    grid-row: span 3;
+    width: 180px; height: 124px;
+    background: url('../img/css_sprites.png') -718px -10px;
+}
+.img1{
+    grid-column: span 2;
+    background: url('../img/frontpage_mobil.png');
+    border: solid 5px white;
+    border-bottom: 2.5px;
 }

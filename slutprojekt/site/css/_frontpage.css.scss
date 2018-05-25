@@ -2,21 +2,17 @@
     display: grid;
     grid-template-rows: 400px 300px 520px 520px 520px auto auto;
     grid-template-columns: repeat(2, 1fr);
+    margin-left: none;
+    margin-right: none;
 }
-.img1{
-    grid-column: span 2;
-    background-image: url("../img/tillfallig.png");
-    border: solid 5px white;
-    border-bottom: 2.5px;
-    background-size: cover;
-}
+
 .you_will_get{
     grid-column: span 2;
     display: grid;
     grid-template-rows: 60px 240;
     grid-template-columns: 1fr; 
     border: solid 5px white;
-    border-bottom: 2.5px
+    border-bottom: solid 5px white;
 }
 .about{
     grid-column: span 2;
@@ -29,7 +25,7 @@
 .contact{
     grid-column: span 2;
     display: grid;
-    grid-template-rows: 60px 40px 40px 40px auto 60px;
+    grid-template-rows: 60px 40px 40px 40px 200px 60px;
     grid-template-columns: 1;
     border: solid 5px white;
     border-bottom: 2.5px;
@@ -46,71 +42,4 @@
 
 .info_desktop{
     display: none;
-}
-@media only screen and (min-device-width: 1920px)  {
-    .container_index {
-        grid-template-rows: 700px 1276px 700px;
-        background-color: none;
-
-    }
-    .img1{
-        opacity: 0;
-    }
-    .you_will_get{
-        background-color: hotpink;
-        border: none;
-        display: grid;
-        grid-template-rows: 100px 100px 1076px;
-        grid-template-columns: 1fr; 
-    }
-    .info_desktop{
-        background-color: hotpink;
-        display: grid;
-        grid-template-rows: 300px 100px 576px 100px;
-        grid-template-columns: repeat(12, 1fr)
-        
-    }
-    .img_big_desktop{
-        background-color: hotpink;
-        grid-column: span 4;
-    }
-
-    .info_desktop h1{
-        grid-column: span 4;
-        text-align: center;
-    }
-    whitespace{
-        background-color: hotpink;
-        grid-column: span 2;
-    }
-    .table_layout{
-        background-color: hotpink;
-        grid-column: span 8;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        border: solid 5px white;
-    }
-    .table{
-        background-color: hotpink;
-        grid-column: span 1;
-        text-align: center;
-        font-size: 3em;
-        border: solid 2px white;
-    }
-    .about{
-        background-color: hotpink;
-        border: none;
-        grid-column: span 1;
-    }
-    .contact{
-        background-color: hotpink;
-        border: none;
-        grid-column: span 1;
-    }
-    .front_img{
-        background-color: hotpink;
-        border: none;
-        display: none;
-    }
 }

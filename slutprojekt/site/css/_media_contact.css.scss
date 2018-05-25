@@ -1,0 +1,23 @@
+@media only screen and (min-device-width: 1020px)  {
+    .container_contact{
+        display: none;
+    }
+    .desktop_container_contact{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 700px 730px;
+    }
+    .desktop_container_contact whitespace{
+        background-color: transparent;
+    }
+    .desktop_contact{
+        grid-column: span 2;
+        background-color: hotpink;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 100px 250px 60px 60px 200px 60px;
+    }
+    .size2{
+        grid-column: span 2;
+    }
+}

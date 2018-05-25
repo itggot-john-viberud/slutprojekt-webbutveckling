@@ -1,0 +1,47 @@
+.mySlides{
+    width: 216px;
+    height: 144px;
+    margin: auto;
+    display:block;
+}
+.mySlides2{
+    width: 216px;
+    height: 144px;
+    margin: auto;
+    display:block;
+}
+.mySlides3{
+    width: 216px;
+    height: 144px;
+    margin: auto;
+    display:block;
+}
+
+.w3-button{
+    width: 72px;
+    height:  144px;
+    border-radius: 50px;
+    color: white;
+    border: solid white 5px;
+    background-color: hotpink;
+    margin:auto;
+    display:block;
+    font-size: 1.5em;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+.w3-button:hover{
+    background-color: white; 
+    color: hotpink;
+    border: hotpink;
+    
+}
+
+.w3-display-left{
+    margin:auto;
+    display:block;
+}
+.w3-display-right{
+    margin:auto;
+    display:block;
+}

@@ -1,0 +1,39 @@
+@media only screen and (min-device-width: 1020px)  {
+    .adopt_adopt_img{
+        display: none;
+    }
+    .adopt_adopt{
+        display: none;
+    }
+    .container_adopt{
+        width: 1296px;
+        display: grid;
+        grid-template-rows: 700px repeat(6, 330px);
+    }
+    .desktop_adopt_img{
+        grid-column: span 2;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 100px 144px 100px;
+        background-color: hotpink;
+    }
+    .desk_ado_img{
+        width: 216px;
+        height: 144px;
+        margin: auto;
+        display:block;
+    }
+    .container_adopt whitespace{
+        background-color: transparent;
+    }
+    .only_desktop_adopt{
+        display: block;
+    }
+    .types{
+        border: none;
+        background-color: hotpink;
+    }
+    whitespaceend{
+        background-color: hotpink;
+    }
+}

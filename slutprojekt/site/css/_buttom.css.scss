@@ -12,10 +12,31 @@ button{
     font-size: 2em;
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
+    text-align: center;
 }
 .header_button:hover{
-    background-color: hotpink; /* Green */
+    background-color: hotpink;
     color: white;
+    
+}
+.button_home_mobil{
+    height: 60px;
+    width: 120px;
+    border-radius: 50px;
+    color: white;
+    border: solid white 5px;
+    background-color: hotpink;
+    font-size: 1.5em;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+}
+.button_home_mobil:hover{
+    background-color: white; 
+    color: hotpink;
+    border: hotpink;
     
 }
 .mobil_button{
@@ -27,6 +48,11 @@ button{
     border: solid white 5px;
     background-color: hotpink;
     font-size: 1.5em;
+}
+.mobil_button:hover{
+    color: hotpink;
+    border: solid hotpink 5px;
+    background-color: white;
 }
 .menu_mobil_close{
     border: solid white 4px;
@@ -66,4 +92,84 @@ button{
     padding: 16px;
     font-size: 20px;
     cursor: pointer;
+}
+.desktop_contact_button{
+    grid-column: span 2;
+    height: 60px;
+    width: 120px;
+    border-radius: 50px;
+    color: white;
+    border: solid white 5px;
+    background-color: hotpink;
+    margin:auto;
+    display:block;
+    font-size: 1.5em;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+.desktop_contact_button:hover{
+    background-color: white; 
+    color: hotpink;
+    border: hotpink;
+    
+}
+.mobil_contact_button{
+    height: 60px;
+    width: 120px;
+    border-radius: 50px;
+    color: white;
+    border: solid white 5px;
+    background-color: hotpink;
+    margin:auto;
+    display:block;
+    font-size: 1.5em;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+.mobil_contact_button:hover{
+    background-color: white; 
+    color: hotpink;
+    border: hotpink;
+    
+}
+.muu{
+    grid-column: span 2;
+}
+.end_button{
+    grid-column: span 1;
+    height: 30px;
+    width: 180px;
+    border-radius: 9001px;
+    background-color: hotpink;
+    color: white;
+    border: solid white 5px;
+    font-size: 1em;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    margin: auto;
+    display:block;
+}
+.end_button:hover{
+    background-color: white;
+    color: hotpink;   
+}
+@media only screen and (min-device-width: 1020px)  {
+    .end_button{
+        grid-column: span 1;
+        height: 50px;
+        width: 432px;
+        border-radius: 9001px;
+        color: hotpink;
+        border: solid hotpink 5px;
+        background-color: white;
+        font-size: 2em;
+        -webkit-transition-duration: 0.4s;
+        transition-duration: 0.4s;
+        text-align: center;
+    }
+    .end_button:hover{
+        background-color: hotpink;
+        color: white;
+    
+    }
 }
